@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pokepedia</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  -{
+    height:100%;
+  }
+    body{
+      background-color:black;
+      background-attachment:fixed;
+      max-width: 1200px;
+     font-family: 'Poppins', sans-serif;
+     padding:10px;
+     margin: 5px;
+    }
+    
+    .logo{
+      width:50px;
+      height:50px;
+      }
+    .logoa{
+      width: 70px;
+      height:70px;
+      margin:0px;
+      padding-right: 0px;
+    }
+    .menu{
+      list-style: none;
+      padding:0px;
+      margin: 0px;
+    }
+    .menu li{
+      display:inline-block;
+      position: relative;
+    }
+    .menu li:hover ul{
+      display:block;
+    }
+    .menu ul{
+      display:none;
+      position: absolute;
+      top:100%;
+      center: 20%;
+      list-style: none;
+      padding:0px;
+      margin:0px;
+    }
+    .menu ul li{
+      width: 70px;
+    }
+    header{
+      display:flex;
+      justify-content: space-between;
+      padding: 0px 10px;
+    }
+    .submenu{
+      background-color: white;
+      border:1px solid black;
+      border-radius: 10px;
+      padding: 5px;
+      margin: 1px;
+      max-width: 70px;
+      justify-content: space-between;
+      text-align: center;
+    }
+    a{
+      text-decoration: none;
+      color:black;
+      font-weight: bold;
+    }
+    header .submenu:hover{
+      transform: scale(1.03);
+      background-color: red;
+      text-decoration: underline;
+      border:2px solid white;
+      color:white;
+      
+    }
+    a:hover{
+      text-decoration: underline;
+      color:white;
+    }
+    .amber{
+     height:180px;
+     width:130px;
+    }
+    main .listadeitada{
+      list-style: none;
+      padding:10px 0px;
+      margin-left:5px;
+      margin-bottom:0px;
+      display: flex;
+      max-width:1200px;
+      overflow-x: scroll;
+      gap:5px;
+      margin-right: 3px;
+      
+      
+     
+      
+    }
+    main .listadeitada li{
+      margin-right: 10px;
+    }
+    main .listadeitada .cartao:hover{
+      transform: scale(1.05);
+      transition: 0.4s ease-in-out;
+      background-color: darkred;
+      color:white;
+      
+    }
+    .cartao{
+      background-color: #d8e3ec;
+      background-image: url('/imagens /IMG-20230601-WA0011.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      width:200px;
+      height: 350px;
+      padding:16px;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      border-radius:10px 40px;
+      transition:0.2s ease-in-out;
+      justify-content: center;
+    }
+    p{
+      text-indent: 10px;
+      line-height: 1.6;
+    }
+    
+   
+    h1{
+      margin-top:50px;
+      font-size: 30px;
+      color:white;
+      border-left: 3px solid white;
+      padding-left: 5px;
+    }
+    h2 {
+      color: white;
+    }
+    .description{
+      max-width:190px;
+      max-height: 60px;
+      overflow-y: scroll;
+      font-size: 14px;
+      padding-right: 10px;
+    }
+    .informacoes{
+      padding-top:0px;
+      margin-left: 5px;
+      margin-top: 10px;
+      max-height: 90px;
+      max-width: 100px;
+      overflow-y: scroll;
+    }
+    .edit{
+      margin-top: 20px;
+    }
+    article p{
+      color:white;
+    }
+    .satoshi{
+      max-width: 1000px;
+      height: 500px;
+      background-image: url('/imagens /satoshi.jpeg');
+      background-size: cover;
+      background-position: center center;
+      padding: 10px;
+      margin: 10px 0px;
+      background-attachment: fixed;
+      
+      
+    }
+    aside{
+      background-image: url('/imagens /images.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position:center center;
+      max-width:400px;
+      height:255px;
+      margin:auto;
+      
+      
+      
+    }
+    footer{
+      background-color:darkred;
+      color:white;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <ul class="menu">
+      <li><a href="#"><img src="/imagens /pokeball.png" class="logo"alt=""></a>
+      <ul>
+        <li class="submenu"><a href="/index.html" target="_self" rel="prev">Pokedex</a></li>
+        <li class="submenu"><a href="#">Doar</a></li>
+        
+      </ul>
+      </li>
+    </ul>
+    <ul class="menu">
+        <li class="pontinho"><a href="#"><img src="/imagens /19 Sem Título_20230615170724.png" class="logoa"alt=""></a>
+        <ul>
+          <li class="submenu"><a href="#">Botão</a></li>
+        </ul>
+        </li>
+      </li>
+    </ul>
+  </header>
+  <main>
+    <h1>Animes :</h1>
+    <ul class="listadeitada">
+      <li class="cartao">
+        <div class="informacoes">
+          <span>Pokémon: The Original Series (1997-2002)</span>
+        </div>
+        <img class="amber" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvRmBHCboF-tppSqDzn3Wz2Xf6O9af-emhGA&usqp=CAU"alt="">
+          <p class="description">Pokémon: The Original Series (conhecido como Pokémon: Indigo League) é a primeira série de anime de Pokémon e acompanha as aventuras de Ash Ketchum enquanto ele parte em sua jornada para se tornar um Mestre Pokémon. Esta série abrange as regiões de Kanto e Johto.</p>
+        </li>
+      <li class="cartao">
+        <div class="informacoes">
+          <span>Pokémon: Advanced Generation (2002-2006)</span>
+        </div>
+        <img class="amber" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPrBu5NrMY7Dqkoz7pFJE-nFOsA-VYTQTWXw&usqp=CAU" alt="">
+        <p class="description">Pokémon: Advanced Generation continua a história de Ash e segue sua jornada pela região de Hoenn.</p>
+      </li>
+      <li class="cartao">
+        <div class="informacoes">
+           <span>Pokémon: Diamond and Pearl (2006-2010)</span>
+        </div>
+       <img class="amber" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4fLsG4WRJY1acLH0cyPTMETNUqv_ew10qvg&usqp=CAU">
+        <p class="description">Pokémon: Diamond and Pearl é a terceira série de anime de Pokémon e segue Ash, Pikachu e seus amigos enquanto eles exploram a região de Sinnoh.</p>
+        
+       </li>
+      <li class="cartao">
+        <div class="imformacoes">
+          <span>Pokémon: Black & White (2010-2013)</span>
+        </div>
+        <img class="amber" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_WVm4x8OMHWuBjFbADhSbO-B6R4ZpxE8r2Q&usqp=CAU" alt="">
+          <p class="description">Pokémon: Black & White apresenta uma nova região chamada Unova. Ash continua sua jornada com novos companheiros, Iris e Cilan.</p>
+        </li>
+      <li class="cartao">
+        <div class="infoacoes">
+          <span>Pokémon: XY (2013-2016)</span>
+        </div>
+        <img class="amber" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLCfLiF0yZw8RWrmAWLuWk9g_WN-zSC5BAh6BQOaJCU4p9h0Q&s" alt="">
+          <p class="description">Pokémon: XY ocorre na região de Kalos e apresenta novos Pokémon, incluindo a Mega Evolução. Ash viaja com Serena, Clemont e Bonnie.</p>
+        </li>
+      <li class="cartao">
+        <div class="informacoes">
+          <span>Pokémon: Sun & Moon (2016-2019)</span>
+        </div>
+        <img class="amber" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2-9APctQBfYs3swwjU01TbydIOcT2jjQmDQ&usqp=CAU" alt="">
+          <p class="description">Pokémon: Sun & Moon leva Ash e Pikachu à região tropical de Alola. Eles frequentam a Escola Pokémon e participam de várias aventuras na ilha.</p>
+        </li>
+        <li class="cartao">
+          <div class="informacoes">
+            <span>Pokémon Journeys: The Series (2019-2023)</span>
+          </div>
+          <img class="amber" src="https://upload.wikimedia.org/wikipedia/en/0/04/Pok%C3%A9mon_S23_-_Posters.png" alt="">
+          <p class="description">Pokémon Journeys: The Series continua a história de Ash e apresenta um novo personagem chamado Goh. Eles viajam por várias regiões, incluindo Galar, e encontram Pokémon de todas as gerações.
+            
+          </p>
+        </li>
+      
+    </ul>
+
+  <h1>Jogos :</h1>
+  <h2>A franquia de jogos da saga pokémon é muito vasta, selecionei 10 jogos mais bem faldos da franquia. Que são:</h2>
+    <ul class="listadeitada">
+      <li class="cartao">
+        <div class="informacoes">
+          <span>Pokémon Red/Blue (1996)</span>
+        </div>
+        <img class="amber" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNT46JcvLIcFKhkbHDn-ek90AvckqxQg9exg&usqp=CAU"alt="">
+        <p class="description">Os jogos originais de Pokémon para Game Boy, que começaram a franquia. Os jogadores exploram a região de Kanto, capturam Pokémon e batalham para se tornarem Mestres Pokémon.</p>
+      </li>
+      <li class="cartao">
+        <div class="informacoes">
+          <span>Pokémon Gold/Silver (1999)</span>
+        </div><img class="amber" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSQ_L6iYP1vICenzlPOPnurVzzZEJ3tSK24g&usqp=CAU">
+        <p class="description">A sequência dos jogos originais, ambientada na região de Johto. Pokémon Gold/Silver expandiram o mundo Pokémon, introduzindo novos recursos, como a possibilidade de visitar Kanto após concluir a história principal.</p>
+      </li>
+      <li class="cartao">
+        <div class="informacoes">
+          <span>Pokémon Emerald (2004)</span>
+        </div>
+        <img class="amber" src="https://upload.wikimedia.org/wikipedia/en/f/f7/PokemonEmeraldBox.jpg" alt="">
+        <p class="description">Uma versão aprimorada dos jogos Ruby/Sapphire, com uma história expandida e recursos adicionais. Emerald é amplamente considerado como um dos jogos mais completos e desafiadores da série.</p>
+      </li>
+      </li>
+      <li class="cartao">
+        <div class="informacoes">
+          <span>Pokémon FireRed/LeafGreen (2004)</span>
+        </div>
+        
+        <img class="amber" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh7Ug5PT8IaH0sOLmpfEFSrdka4TIc2yAE6g&usqp=CAU" alt="/03b7a95cd2bb2fec4d40dd45901aef9e.jpg">
+        <p class="description">Remakes dos jogos originais Red/Blue, com gráficos aprimorados e recursos adicionais. FireRed/LeafGreen oferecem uma experiência nostálgica para os fãs da primeira geração de Pokémon.</p>
+      </li>
+      <li class="cartao">
+        <div class="informacoes">
+          <span>Pokémon Platinum (2008)</span>
+        </div>
+        <img class="amber" src="/imagens /Pokémon_Platinum_cover.png" alt="">
+        <p class="description">Um aperfeiçoamento dos jogos Diamond/Pearl, com uma história mais envolvente, novos recursos e melhorias gerais. Platinum é amplamente elogiado por sua atmosfera e pela adição da Battle Frontier.</p>
+      </li>
+      <li class="cartao">
+        <div class="informacoes">
+          <span>Pokémon HeartGold/SoulSilver (2009)</span>
+        </div>
+        <img class="amber" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGkSP64eSS8LCb1LyY2zDimbByTVl4XEGfGg&usqp=CAU" alt="">
+        <p class="description">Remakes dos jogos Gold/Silver para Nintendo DS. Eles trazem de volta a região de Johto com gráficos atualizados e recursos adicionais, incluindo o Pokéwalker, um acessório para treinar Pokémon.</p>
+      <li class="cartao">
+        <div class="informacoes">
+          <span>Pokémon Black/White (2010)</span>
+        </div>
+        <img class="amber" src="https://upload.wikimedia.org/wikipedia/pt/b/b4/Pok%C3%A9mon_Black_and_White_covers.png" alt="">
+        <p class="description">Os primeiros jogos da quinta geração, com uma nova região chamada Unova e uma história mais rica e complexa. Black/White também introduziram mais de 150 novos Pokémon exclusivos da região.</p>
+      </li>
+      <li class="cartao">
+        <div class="informacoes">
+          <span>Pokémon X/Y (2013)</span>
+        </div>
+        <img class="amber"src="/imagens /Pokémon_XY_cover.png" alt="">
+        <p class="description">Os primeiros jogos da sexta geração, apresentando a região de Kalos e gráficos em 3D. X/Y trouxeram inovações, como a Mega Evolução, e uma grande variedade de Pokémon para os jogadores explorarem.</p>
+      </li>
+      <li class="cartao">
+        <div class="informacoes">
+          <span>Pokémon Omega Ruby/Alpha Sapphire (2014)</span>
+        </div>
+        <img class="amber" src="https://upload.wikimedia.org/wikipedia/pt/4/4e/Pok%C3%A9mon_ORAS_cover.png" alt="">
+        <p class="description">Remakes dos jogos Ruby/Sapphire para o Nintendo 3DS. Eles apresentam gráficos atualizados, recursos adicionais e a possibilidade de Mega Evolução. Os fãs apreciam a oportunidade de reviver a aventura clássica em um sistema mais moderno.</p>
+      </li>
+      <li class="cartao">
+        <div class="informacoes">
+          <span>Pokémon Sun/Moon (2016)</span>
+        </div>
+        <img class="amber"src="https://upload.wikimedia.org/wikipedia/pt/6/60/Pok%C3%A9mon_Sun_Moon_cover.png" alt="">
+        <p class="description">Os jogos da sétima geração, ambientados na região tropical de Alola. Sun/Moon trouxeram inovações, como o sistema de Trials, a ausência de ginásios e a narrativa mais focada, que se destacaram entre os fãs.</p>
+      </li>
+    </ul>
+    <article>
+      <h1>Qual a história por trás da criação de pokémon?</h1>
+      <p>O criador original de Pokémon é Satoshi Tajiri. Ele desenvolveu uma paixão por colecionar insetos na infância e gostava de explorar a natureza ao seu redor. Tajiri queria criar uma experiência que capturasse a sensação de explorar e coletar, e assim nasceu a ideia de Pokémon.</p>
+        <div class="satoshi"></div>
+      <p>Game Freak: Satoshi Tajiri fundou a Game Freak em 1989, uma empresa de desenvolvimento de jogos. Ele se juntou a Ken Sugimori, um ilustrador, e juntos começaram a trabalhar em um jogo chamado "Capsule Monsters". Mais tarde, o jogo foi renomeado para "Pokémon".</p>
+      <aside>
+      </aside>
+      <p>Tajiri levou a ideia de Pokémon para a Nintendo e encontrou apoio no lendário designer de jogos, Shigeru Miyamoto. A Nintendo viu potencial no conceito e decidiu lançar o jogo.</p>
+        <p>Em 1996, Pokémon Red e Green foram lançados no Japão para o Game Boy. Os jogos permitiam que os jogadores capturassem, treinassem e batalhassem com uma variedade de criaturas chamadas Pokémon. O sucesso dos jogos foi instantâneo, gerando uma enorme base de fãs.</p>
+ 
+         <p>Após o sucesso dos jogos, a franquia Pokémon se expandiu para incluir um anime, um jogo de cartas colecionáveis, filmes, brinquedos e uma ampla gama de mercadorias. O mundo de Pokémon se tornou um fenômeno global e uma das franquias de entretenimento mais lucrativas da história.</p>
+    </article>
+
+  </main>
+    <footer>
+      <p>Este site foi feito por mim,com o intuito de praticar o que venho estudando </p>
+    </footer>
+</body>
+
+</html>
